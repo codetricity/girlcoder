@@ -1,0 +1,41 @@
+<h1 id="myTitle"> Caitlyn</h1>
+<img src="caitlyn.png" id="cupcake">
+<br>
+<button onclick='pandaClick();'>Panda</button>
+<button onclick='foxClick();'> Fennec Fox </button>
+<button onclick='dogClick();'> Dog </button>
+<button onclick='coClick();'> Caitlyn </button>
+
+<script>
+function pandaClick() {
+  var myTitle = document.getElementById("myTitle");
+  var myImage = document.getElementById("cupcake");
+  var heading = "Panda";
+  myTitle.innerHTML = heading;
+  myImage.src = "panda.jpg";
+}
+
+function foxClick() {
+  var myTitle = document.getElementById("myTitle");
+  var myImage = document.getElementById("cupcake");
+  myTitle.innerHTML = "Fennec Fox";
+  myImage.src = "fennecfox.jpg";
+  myImage.width = "472";
+  myImage.height = "554";
+}
+
+function dogClick() {
+  var myTitle = document.getElementById("myTitle");
+  var myImage = document.getElementById("cupcake");
+  myTitle.innerHTML = "Dog";
+  myImage.src = "dog.jpg";
+}
+
+function coClick() {
+  var myTitle = document.getElementById("myTitle");
+  var myImage = document.getElementById("cupcake");
+  myTitle.innerHTML = "Caitlyn";
+  myImage.src = "caitlyn.png";
+}
+
+</script>
